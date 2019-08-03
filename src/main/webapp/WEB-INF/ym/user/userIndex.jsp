@@ -24,7 +24,7 @@
 				<span><fmt:formatNumber
 						value="${totalMoney }"
 						pattern="#,##0.00" /></span>
-				<p>(元)</p>
+				<p></p>
 			</div>
 			
 			<div class="sl_cz9">
@@ -62,10 +62,10 @@
 						href="${pathWeb }/user/bandMobileView.do">
 							<div class="pic">
 								<img src="${configjscss }/images/dm.png">
-							</div> <span>店面邀请</span>
+							</div> <span>我的客户</span>
 					</a></li>
 					<li><a rel="external"
-						href="${pathWeb }/user/materialsView.do" class="zc_pic">
+						href="${pathWeb }/user/userCode.do" class="zc_pic">
 							<div class="pic">
 								<img src="${configjscss }/images/ewm.png">
 							</div> <span>我的二维码</span>

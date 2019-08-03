@@ -21,17 +21,18 @@
 		<div class="hd-nrk" style="background: #fff; padding-bottom: 3rem;">
 			 
 			<div class="yqtg-dak">
-				 
+				
 				<span>使用微信扫一扫下面您的专属二维码，或点击右上角设置 发送给朋友或分享到朋友圈，好友点击注册即可邀请：</span>
 				<p>
-						<img id="shareImg" src="${configjscss }/images/yqhy_06.jpg">
+						<img id="shareImg" src="${configjscss }/images/qcode.png">
 				</p>
 			</div>
 			<div class="wxts-n">
-				<i>温馨提示：</i><br />  1.
+				<i>温馨提示：${pathWeb1 }</i><br />  1.
 				使用过程中遇到问题，请联系客服1234567
 			</div>
 		</div>
+		<jsp:include page="/foot.do?footId=4"></jsp:include>
 	</div>
 
 	<script type="text/javascript">
@@ -43,7 +44,7 @@
 			success : function(data) {
 				var invite_id=$("#invite_id").text();
 				if (data.code=='200') {
-					$("#shareImg").attr("src",'${pathWeb}' + data.msg);
+				//	$("#shareImg").attr("src", data.msg);
 				} 
 			}
 		});
