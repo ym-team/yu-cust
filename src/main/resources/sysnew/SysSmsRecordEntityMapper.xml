@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- NAMESPACE必须和接口的类路径一样 -->
+<mapper namespace="com.hmn.ym.mapper.SysSmsRecordMapper">
+
+	<resultMap id="BaseResultMap"
+		type="com.hmn.ym.entity.SysSmsRecordEntity">
+		<id column="PK_ID" property="pkId" jdbcType="INTEGER" />
+		<id column="SEND_USER_DEVICE_ID" property="sendUserDeviceId" jdbcType="VARCHAR" />
+		<id column="SEND_USER_ID" property="sendUserId" jdbcType="INTEGER" />
+		<id column="SMS_CONTENT" property="smsContent" jdbcType="VARCHAR" />
+		<id column="RECIEVE_PHONE_NUM" property="recievePhoneNum" jdbcType="VARCHAR" />
+		<id column="BUSI_TYPE" property="busiType" jdbcType="VARCHAR" />
+		<id column="RETURN_CODE" property="returnCode" jdbcType="VARCHAR" />
+		<id column="RETURN_MSG" property="returnMsg" jdbcType="VARCHAR" />
+		<id column="BATCH_ID" property="batchId" jdbcType="VARCHAR" />
+		<id column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP" />
+		<id column="OP_TIME" property="opTime" jdbcType="TIMESTAMP" />
+		<id column="REMARK" property="remark" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="baseColumns">
+		PK_ID
+		,
+		SEND_USER_DEVICE_ID
+		,
+		SEND_USER_ID
+		,
+		SMS_CONTENT
+		,
+		RECIEVE_PHONE_NUM
+		,
+		BUSI_TYPE
+		,
+		RETURN_CODE
+		,
+		RETURN_MSG
+		,
+		BATCH_ID
+		,
+		CREATE_DATE
+		,
+		OP_TIME
+		,
+		REMARK
+	</sql>
+
+	<!-- 新增开始 -->
+	<insert id="saveSysSmsRecordEntity" parameterType="com.hmn.ym.entity.SysSmsRecordEntity">
+		insert into sys_sms_record
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="pkId != null">
+				PK_ID
+				,
+			</if>
+			<if test="sendUserDeviceId != null">
+				SEND_USER_DEVICE_ID
+				,
+			</if>
+			<if test="sendUserId != null">
+				SEND_USER_ID
+				,
+			</if>
+			<if test="smsContent != null">
+				SMS_CONTENT
+				,
+			</if>
+			<if test="recievePhoneNum != null">
+				RECIEVE_PHONE_NUM
+				,
+			</if>
+			<if test="busiType != null">
+				BUSI_TYPE
+				,
+			</if>
+			<if test="returnCode != null">
+				RETURN_CODE
+				,
+			</if>
+			<if test="returnMsg != null">
+				RETURN_MSG
+				,
+			</if>
+			<if test="batchId != null">
+				BATCH_ID
+				,
+			</if>
+			<if test="createDate != null">
+				CREATE_DATE
+				,
+			</if>
+			<if test="opTime != null">
+				OP_TIME
+				,
+			</if>
+			<if test="remark != null">
+				REMARK
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="pkId != null">
+				#{pkId,jdbcType=INTEGER}
+				,
+			</if>
+			<if test="sendUserDeviceId != null">
+				#{sendUserDeviceId,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="sendUserId != null">
+				#{sendUserId,jdbcType=INTEGER}
+				,
+			</if>
+			<if test="smsContent != null">
+				#{smsContent,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="recievePhoneNum != null">
+				#{recievePhoneNum,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="busiType != null">
+				#{busiType,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="returnCode != null">
+				#{returnCode,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="returnMsg != null">
+				#{returnMsg,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="batchId != null">
+				#{batchId,jdbcType=VARCHAR}
+				,
+			</if>
+			<if test="createDate != null">
+				#{createDate,jdbcType=TIMESTAMP}
+				,
+			</if>
+			<if test="opTime != null">
+				#{opTime,jdbcType=TIMESTAMP}
+				,
+			</if>
+			<if test="remark != null">
+				#{remark,jdbcType=VARCHAR}
+			</if>
+		</trim>
+	</insert>
+	<!-- 新增结束 -->
+	
+	<!-- 根据ID查询 -->
+	<select id="selectSysSmsRecordById" parameterType="String"
+		resultMap="BaseResultMap">
+		select * from sys_sms_record where 1=1 and pk_id =#{pkId}
+	</select>
+ 
+<!--分页查询 -->
+	<select id="selectSysSmsRecordEntityPageList" resultMap="BaseResultMap"
+		parameterType="Map" fetchSize="200">
+		select * from sys_sms_record where 1=1 order by pk_id desc
+	</select>
+
+</mapper>

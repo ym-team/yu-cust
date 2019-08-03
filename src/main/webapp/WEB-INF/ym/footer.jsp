@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<div class="footer">
+<ul>
+	<li <c:if test="${ footId == 1 }"> class="current"</c:if> ><a rel="external" href="${pathWeb }/index.do"><i></i><span>首页</span></a></li>
+	<li  <c:if test="${ footId == 2 }"> class="current"</c:if>><a rel="external" href="${pathWeb }/helpView.do"><i class="one3"></i><span>介绍</span></a></li>
+	<li  <c:if test="${ footId == 3 }"> class="current"</c:if>><a rel="external" href="${pathWeb }/kfView.do"><i class="one1"></i><span>客服</span></a></li>
+	<li  <c:if test="${ footId == 4 }"> class="current"</c:if>><a rel="external" href="${pathWeb }/userIndex.do"><i class="one2"></i><span>我的</span></a></li>
+</ul>
+</div>
