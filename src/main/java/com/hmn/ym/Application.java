@@ -12,6 +12,7 @@ import org.springframework.context.annotation.ImportResource;
 @MapperScan("com.hmn.ym.*")//扫描mapper re层，basePackages 为dao层所在路径，支持通配符*，多个以,分隔
 public class Application {
 
+	
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
