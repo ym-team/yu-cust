@@ -74,6 +74,7 @@
 					<input type="text" style="width: 9rem;" class="form-control"
 						placeholder="请输入证件号码">
 				</div>
+				
 			</li>
 		</ul>
 		<div class="forget">
