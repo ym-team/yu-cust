@@ -269,7 +269,7 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 .sl_czfs li{background: #fff;height: 2.2rem;line-height: 2.2rem;padding-left: 0.6rem;font-size: 0.6rem}
 .sl_czfs li p{font-size: 0.6rem;width: 25%;float: left;}
 /* .sl_czfs{border: 1px solid #ccc;} */
-.sl_ji{border-bottom: 1px solid #ccc;}
+.sl_ji{border-bottom: 1px solid #ccc;} 
 .position-rel{ position:relative;float: right;width: 70%;}
 
 .jt_xz{
@@ -431,7 +431,6 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 .sl_cxk h1{height: 2.5rem;line-height: 3rem;font-size: 1rem;}
 .sl_cxk h1 b{font-weight: normal;color: #999;margin-left: 0.5rem;font-size: 0.8rem;}
 .sl_cxk_t{height: 3rem;}
-/* .sl_cxk_t2 img{height: 2rem;margin: 0;margin-left: 2rem;} */
 .sl_cxk_t2 img {
     height: 2rem;
     margin: 0;
@@ -450,7 +449,6 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 .sl_zhzl9{margin-bottom: 3rem;}
 
 
-/* 账户设置 */
 .jbs_con{
 	padding-top: 1rem;
 }
@@ -610,7 +608,6 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 .ui-input-text input, .ui-input-search input {
     padding: 0;
     text-shadow: none;
-    /* min-height: 2.2rem; */
     text-shadow: none;
 }
 .ui-page-theme-a .ui-focus,
