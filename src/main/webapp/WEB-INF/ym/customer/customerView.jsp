@@ -19,7 +19,7 @@
 <div class="ui-page ui-page-theme-a ui-page-active" data-role="page">
 	<header class="jwytz-header">
 		<h3>
-			<span onclick="history.go(-1)"></span>信息<em></em>
+			<span onclick="history.go(-1)"></span>顾客信息<em></em>
 		</h3>
 	</header>
 
