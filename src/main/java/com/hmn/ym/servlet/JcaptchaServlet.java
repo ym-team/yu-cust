@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.hutool.captcha.CaptchaUtil;
+import cn.hutool.captcha.CircleCaptcha;
+
 
 /**
  * 提供验证码图片的Servlet
@@ -30,9 +33,22 @@ public class JcaptchaServlet extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 	}
-
+	
+	
+	
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
+		//定义图形验证码的长、宽、验证码字符数、干扰元素个数
+		CircleCaptcha captcha = CaptchaUtil.createCircleCaptcha(200, 100, 4, 10);
+		// 将图像输出到Servlet输出流中。
+		captcha.write(response.getOutputStream());
+		 req.getSession().setAttribute(CAPTCHA_SESSION, captcha.getCode().toUpperCase());
+	}
+	public static void md5(String a) {
+		
+	}
+
+	protected void doGet2(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		int width = 100;// 定义图片的width
 		int height = 30;// 定义图片的height
 		int codeCount = 4;// 定义图片上显示验证码的个数

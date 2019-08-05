@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +14,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+
+import com.hmn.ym.servlet.JcaptchaServlet;
+
+import cn.hutool.captcha.CaptchaUtil;
+import cn.hutool.captcha.CircleCaptcha;
 
 public class BaseController {
 	protected Logger logger = LoggerFactory
@@ -65,4 +72,41 @@ public class BaseController {
 	    }
 	    return cookieMap;
 	}
+	
+	public boolean validateCaptcha(HttpServletRequest request,String code) {
+		boolean bln = false;
+		code =code.toUpperCase();
+		String cd = request.getSession().getAttribute(JcaptchaServlet.CAPTCHA_SESSION)+"";
+		if(cd.equals(code)) {
+			bln =true;
+		}
+		return bln;
+	}
+	
+	/**
+	 * 检查phone，返回true表示是，反之为否
+	 * 
+	 * @return
+	 */
+	public boolean isPhone(String phone) {
+		phone = isNull(phone);
+		Pattern regex = Pattern.compile("1[3|5|7|8|][0-9]{9}");
+
+		Matcher matcher = regex.matcher(phone);
+		boolean isMatched = matcher.matches();
+		return isMatched;
+	}
+	/**
+	 * 如果str为null，返回“”,否则返回str
+	 * 
+	 * @param str
+	 * @return
+	 */
+	public String isNull(String str) {
+		if (str == null) {
+			return "";
+		}
+		return str;
+	}
+	
 }

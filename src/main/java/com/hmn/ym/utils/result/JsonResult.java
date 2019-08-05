@@ -3,6 +3,8 @@ package com.hmn.ym.utils.result;
 public class JsonResult {
 
 	public static String SUCCESS = "200";
+	
+	public static String ERROR = "500";
 	/**
 	 * 返回代码
 	 */
