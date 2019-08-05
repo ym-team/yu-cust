@@ -28,7 +28,7 @@ public class SendSmsController extends BaseController{
 		String phoneNum = request.getParameter("tel");
 		if (StringUtils.isBlank(captchaCode)) {
 			SpringUtils.renderJsonResult(response, JsonResult.ERROR, "验证码输入错误");
-			return;
+			return; 
 		}
 		String code = SendSmsUtils.randomCode(6);
 		DesEncrypt desEnc = new DesEncrypt();
