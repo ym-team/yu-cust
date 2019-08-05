@@ -1,5 +1,6 @@
 package com.hmn.ym.controller;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,6 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.hmn.ym.utils.Const;
+import com.hmn.ym.utils.SpringUtils;
+import com.hmn.ym.utils.des.DesEncrypt;
+import com.hmn.ym.utils.des.MD5Utils;
+import com.hmn.ym.utils.result.JsonResult;
 
 @Controller
 public class LoginController extends BaseController{
@@ -23,13 +30,40 @@ public class LoginController extends BaseController{
 	private static final String user_login_view = "user/userIndex";
 	
 	
-	@RequestMapping("login")
+	@RequestMapping("index.do")
 	public String index(HttpServletRequest request, HttpServletResponse response) {
 		logger.info("login");
 		return login_view;
 	}
 	
+	@RequestMapping("login.do")
+	public void login(HttpServletRequest request, HttpServletResponse response) {
+
+		Map<String, String> param = this.getParameters(request);
+		String code = "";
+		String msg = "";
+			if (!param.containsKey("userAccount")) {
+				code = "300";
+				msg = "用户名不能为空！！！";
+			}
+			if (!param.containsKey("userPassword")) {
+				code = "300";
+				msg = "密码不能为空！！！";
+			}
+			String userAccount = param.get("userAccount");
+//			DesEncrypt desEncrpt = new DesEncrypt(Const.DES_PUBLIC_ENCRYPT_KEY);
+//			DesEncrypt aesEncrypt = new DesEncrypt(Const.DES_PRIVATE_ENCRYPT_KEY);
+//			String userPassword = desEncrpt.decrypt(param.get("userPassword"));
+//			String checkpassword = MD5Utils.stringToMD5(aesEncrypt.encrypt(userPassword));
+			Map<String,String> params = new HashMap<String,String>();
+			params.put("userPhone", userAccount);
+			
+						code = JsonResult.SUCCESS;
+						msg = "登录成功";
+		System.out.println(msg);
+		SpringUtils.renderJsonResult(response, code, msg);
 	
+	}
 	
 	/**
 	 * 进入个人主页
