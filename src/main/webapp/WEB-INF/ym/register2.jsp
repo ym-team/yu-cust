@@ -38,7 +38,7 @@
 					</li>
 					<li style="border: none;">
 						<i><img src="${configjscss }/images/yqm.png"></i>
-						<span><input id="inviteUserid" name="inviteUserid" value="${inviteUserid}" type="text" placeholder="邀请码（没有可不填）"></span>
+						<span><input id="inviteUserid" name="inviteUserid" value="${inviteUserid}" type="text" placeholder="邀请码（必填项）"></span>
 					</li>
 				</ul>
 				<div class="btn">
@@ -82,9 +82,19 @@
 			return true;
 		}
 	}
+	function checkInviteUserid() {
+		if ($("#inviteUserid").val() == "") {
+			alert("推荐码不能为空");
+			return false;
+		} else {
+			return true;
+		}
+	}
 
+	
+	
 	function register() {
-		if (checkPassword() && checkPwdRepeat()) {
+		if (checkPassword() && checkPwdRepeat()&& checkInviteUserid()) {
 			form1.userPassword.value = encryptByDES(form1.userPassword.value,
 					form1.publickey.value);
 			$("#form1").submit();

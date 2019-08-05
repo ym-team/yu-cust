@@ -67,7 +67,7 @@
 		} else if (userPassword == undefined || userPassword == '') {
 			alert("密码不能为空。");
 			return false;
-		} else {
+		} else { 
 			userPassword = encryptByDES(userPassword, publickey);
 			var data = {
 				"userAccount" : userAccount,
@@ -79,7 +79,7 @@
 
 	function loginCallBack(data) {
 		 if ($_SUCCESS_CODE == data.code) {
-			openPage("${pathWeb }/index.do");
+			openPage("${pathWeb }/userLogin.do");
 		} else {
 			alert(data.msg);
 		}
