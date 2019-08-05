@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CustomerController extends BaseController {
 
     @GetMapping("toAdd")
-    public String StoreEnterView() {
+    public String toAdd() {
         return "/customer/customerView";
     }
 }
