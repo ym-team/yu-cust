@@ -52,22 +52,19 @@
 			<li class="sl_ji">
 				<p>联系人</p>
 				<div class="position-rel">
-					<input type="number" class="form-control" style="width: 9rem;"
-						placeholder="请输入联系人姓名">
+					<input type="number" class="form-control" style="width: 9rem;" placeholder="请输入联系人姓名">
 				</div>
 			</li>
 			<li class="sl_ji">
 				<p>联系电话</p>
 				<div class="position-rel">
-					<input type="text" style="width: 9rem;" class="form-control"
-						placeholder="请输入联系人电话">
+					<input type="text" style="width: 9rem;" class="form-control" placeholder="请输入联系人电话">
 				</div>
 			</li>
 			<li class="sl_ji">
 				<p>联系人证件号</p>
 				<div class="position-rel">
-					<input type="text" style="width: 9rem;" class="form-control"
-						placeholder="请输入证件号码">
+					<input type="text" style="width: 9rem;" class="form-control" placeholder="请输入证件号码">
 				</div>
 				
 			</li>
