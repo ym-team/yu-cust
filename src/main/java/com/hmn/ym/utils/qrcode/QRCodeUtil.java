@@ -63,21 +63,12 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 插入LOGO
-	 * 
-	 * @param source
-	 *            二维码图片
-	 * @param imgPath
-	 *            LOGO图片地址
-	 * @param needCompress
-	 *            是否压缩
-	 * @throws Exception
 	 */
 	private static void insertImage(BufferedImage source, String imgPath,
 			boolean needCompress) throws Exception {
 		File file = new File(imgPath);
 		if (!file.exists()) {
-			System.err.println("" + imgPath + "   该文件不存在！");
+			System.err.println("" + imgPath + "   file no exist！");
 			return;
 		}
 		Image src = ImageIO.read(new File(imgPath));
@@ -95,7 +86,7 @@ public class QRCodeUtil {
 			BufferedImage tag = new BufferedImage(width, height,
 					BufferedImage.TYPE_INT_RGB);
 			Graphics g = tag.getGraphics();
-			g.drawImage(image, 0, 0, null); // 绘制缩小后的图
+			g.drawImage(image, 0, 0, null); // small picture
 			g.dispose();
 			src = image;
 		}
