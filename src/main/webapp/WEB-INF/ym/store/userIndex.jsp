@@ -52,38 +52,6 @@
 								<img src="${configjscss }/images/yj.png">
 							</div> <span>我的业绩</span>
 					</a></li>
-					<li><a rel="external"
-						href="${pathWeb }/user/inputCardView.do">
-							<div class="pic">
-								<img src="${configjscss }/images/gk.png">
-							</div> <span>我的顾客</span>
-					</a></li>
-					<li><a rel="external"
-						href="${pathWeb }/user/bandMobileView.do">
-							<div class="pic">
-								<img src="${configjscss }/images/dm.png">
-							</div> <span>我的客户</span>
-					</a></li>
-					<li><a rel="external"
-						href="${pathWeb }/user/userCode.do" class="zc_pic">
-							<div class="pic">
-								<img src="${configjscss }/images/ewm.png">
-							</div> <span>我的二维码</span>
-					</a></li>
-					
-					<li><a rel="external"
-						href="${pathWeb }/login.do" class="zc_pic">
-							<div class="pic">
-								<img src="${configjscss }/images/tc.png">
-							</div> <span>退出</span>
-					</a></li>
-					
-					<li><a rel="external"
-						href="${pathWeb }/user/materialsView.do" class="zc_pic">
-							<div class="pic">
-								<img src="${configjscss }/images/sj.png">
-							</div> <span>我要升级</span>
-					</a></li>
 				</ul>
 			</div>
 
