@@ -28,18 +28,13 @@
 			</div>
 			
 			<div class="sl_cz9">
-				<a rel="external" data-ajax="false" href="${pathWeb }/index.do" class="com_btn5 ">立即邀请</a> <a
+				<a rel="external" data-ajax="false" href="${pathWeb }/index.do" class="com_btn5 ">顾客邀请</a> <a
 					rel="external" data-ajax="false" href="${pathWeb }/backMoney/backMoneyListView" class="com_btn5 col">我的服务</a>
 			</div>
 			
 			<div class="list_con">
 				<ul>
-					<li><a rel="external"
-						href="${pathWeb }/user/userInfoView.do">
-							<div class="pic">
-								<img src="${configjscss }/images/sfxx.png">
-							</div> <span>身份信息</span>
-					</a></li>
+					 
 					<li><a rel="external"
 						href="${pathWeb }/company/companyInfoView.do">
 							<div class="pic">
@@ -58,18 +53,7 @@
 								<img src="${configjscss }/images/gk.png">
 							</div> <span>我的顾客</span>
 					</a></li>
-					<li><a rel="external"
-						href="${pathWeb }/user/bandMobileView.do">
-							<div class="pic">
-								<img src="${configjscss }/images/dm.png">
-							</div> <span>我的客户</span>
-					</a></li>
-					<li><a rel="external"
-						href="${pathWeb }/user/userCode.do" class="zc_pic">
-							<div class="pic">
-								<img src="${configjscss }/images/ewm.png">
-							</div> <span>我的二维码</span>
-					</a></li>
+					 
 					
 					<li><a rel="external"
 						href="${pathWeb }/login.do" class="zc_pic">
@@ -77,19 +61,10 @@
 								<img src="${configjscss }/images/tc.png">
 							</div> <span>退出</span>
 					</a></li>
-					
-					<li><a rel="external"
-						href="${pathWeb }/user/materialsView.do" class="zc_pic">
-							<div class="pic">
-								<img src="${configjscss }/images/sj.png">
-							</div> <span>我要升级</span>
-					</a></li>
 				</ul>
 			</div>
 
 		</div>
-		<!--gd_con-->
-		<jsp:include page="/foot.do?footId=4"></jsp:include>
 	</div>
 <script type="text/javascript">
 if("${message}"){
