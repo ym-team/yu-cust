@@ -84,8 +84,16 @@
 		</div>
 	</div>
 	<div class="btn4">
+	
+	<!-- 
 		<a style="margin-bottom: 5rem;" href="javascript:void(0)"
-			onclick="sub();" class="com_btn1 sl_tixian">确认</a>
+			onclick="sub();" class="com_btn1 sl_tixian">确认</a> -->
+			
+			
+		<a style="margin-bottom: 5rem;" href="${pathWeb }/store/StoreRegister.do"
+			class="com_btn1 sl_tixian">确认</a>
+			
+			
 	</div>
 	<jsp:include page="/h5/foot.do?footId=4"></jsp:include>
 </div>

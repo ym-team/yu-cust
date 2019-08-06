@@ -51,6 +51,9 @@ public class LoginController extends BaseController{
 				msg = "密码不能为空！！！";
 			}
 			String userAccount = param.get("userAccount");
+			
+			
+		
 //			DesEncrypt desEncrpt = new DesEncrypt(Const.DES_PUBLIC_ENCRYPT_KEY);
 //			DesEncrypt aesEncrypt = new DesEncrypt(Const.DES_PRIVATE_ENCRYPT_KEY);
 //			String userPassword = desEncrpt.decrypt(param.get("userPassword"));
