@@ -48,11 +48,12 @@
 							</div> <span>我的业绩</span>
 					</a></li>
 					<li>
-						<a href="${pathWeb }/user/inputCardView.do">
+						<a rel="external" href="${pathWeb }/user/inputCardView.do">
 							<div class="pic">
 								<img src="${configjscss }/images/gk.png">
 							</div> <span>我的顾客</span>
-					</a></li>
+						</a>
+					</li>
 					 
 					
 					<li><a rel="external"
