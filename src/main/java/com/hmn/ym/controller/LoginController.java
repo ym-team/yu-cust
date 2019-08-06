@@ -1,5 +1,6 @@
 package com.hmn.ym.controller;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,7 +38,7 @@ public class LoginController extends BaseController{
 	}
 	
 	@RequestMapping("login.do")
-	public void login(HttpServletRequest request, HttpServletResponse response) {
+	public void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
 		Map<String, String> param = this.getParameters(request);
 		String code = "";
@@ -51,6 +52,8 @@ public class LoginController extends BaseController{
 				msg = "密码不能为空！！！";
 			}
 			String userAccount = param.get("userAccount");
+			
+		
 //			DesEncrypt desEncrpt = new DesEncrypt(Const.DES_PUBLIC_ENCRYPT_KEY);
 //			DesEncrypt aesEncrypt = new DesEncrypt(Const.DES_PRIVATE_ENCRYPT_KEY);
 //			String userPassword = desEncrpt.decrypt(param.get("userPassword"));
@@ -60,6 +63,11 @@ public class LoginController extends BaseController{
 			
 						code = JsonResult.SUCCESS;
 						msg = "登录成功";
+						
+		if("13751768919".equals(userAccount)){
+			System.out.println("4444444444");
+			code = "3";
+		}
 		System.out.println(msg);
 		SpringUtils.renderJsonResult(response, code, msg);
 	

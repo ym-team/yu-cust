@@ -77,10 +77,16 @@
 		}
 	}
 
+	
+	var $_SUCCESS_CODE3='3';
 	function loginCallBack(data) {
+		alert(data.code);
 		 if ($_SUCCESS_CODE == data.code) {
 			openPage("${pathWeb }/userLogin.do");
-		} else {
+		} else if($_SUCCESS_CODE3 ==  data.code){
+			openPage("${pathWeb }/store/storeLogin.do");
+			
+		}else {
 			alert(data.msg);
 		}
 	}

@@ -25,18 +25,15 @@ import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
 /**
- * 二维码工具类
  * 
  */
 public class QRCodeUtil {
 
 	private static final String CHARSET = "utf-8";
 	private static final String FORMAT_NAME = "JPG";
-	// 二维码尺寸
+	
 	private static final int QRCODE_SIZE = 300;
-	// LOGO宽度
 	private static final int WIDTH = 60;
-	// LOGO高度
 	private static final int HEIGHT = 60;
 
 	private static BufferedImage createImage(String content, String imgPath,
@@ -66,21 +63,12 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 插入LOGO
-	 * 
-	 * @param source
-	 *            二维码图片
-	 * @param imgPath
-	 *            LOGO图片地址
-	 * @param needCompress
-	 *            是否压缩
-	 * @throws Exception
 	 */
 	private static void insertImage(BufferedImage source, String imgPath,
 			boolean needCompress) throws Exception {
 		File file = new File(imgPath);
 		if (!file.exists()) {
-			System.err.println("" + imgPath + "   该文件不存在！");
+			System.err.println("" + imgPath + "   file no exist！");
 			return;
 		}
 		Image src = ImageIO.read(new File(imgPath));
@@ -98,7 +86,7 @@ public class QRCodeUtil {
 			BufferedImage tag = new BufferedImage(width, height,
 					BufferedImage.TYPE_INT_RGB);
 			Graphics g = tag.getGraphics();
-			g.drawImage(image, 0, 0, null); // 绘制缩小后的图
+			g.drawImage(image, 0, 0, null); // small picture
 			g.dispose();
 			src = image;
 		}
@@ -114,17 +102,6 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 生成二维码(内嵌LOGO)
-	 * 
-	 * @param content
-	 *            内容
-	 * @param imgPath
-	 *            LOGO地址
-	 * @param destPath
-	 *            存放目录
-	 * @param needCompress
-	 *            是否压缩LOGO
-	 * @throws Exception
 	 */
 	public static void encode(String content, String imgPath, String destPath,
 			boolean needCompress) throws Exception {
@@ -134,30 +111,23 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 当文件夹不存在时，mkdirs会自动创建多层目录，区别于mkdir．(mkdir如果父目录不存在则会抛出异常)
 	 * 
 	 * @author lanyuan Email: mmm333zzz520@163.com
 	 * @date 2013-12-11 上午10:16:36
 	 * @param destPath
-	 *            存放目录
 	 */
 	public static void mkdirs(String destPath) {
 		File file = new File(destPath);
-		// 当文件夹不存在时，mkdirs会自动创建多层目录，区别于mkdir．(mkdir如果父目录不存在则会抛出异常)
 		if (!file.exists() && !file.isDirectory()) {
 			file.mkdirs();
 		}
 	}
 
 	/**
-	 * 生成二维码(内嵌LOGO)
 	 * 
 	 * @param content
-	 *            内容
 	 * @param imgPath
-	 *            LOGO地址
 	 * @param destPath
-	 *            存储地址
 	 * @throws Exception
 	 */
 	public static void encode(String content, String imgPath, String destPath)
@@ -166,14 +136,10 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 生成二维码
 	 * 
 	 * @param content
-	 *            内容
 	 * @param destPath
-	 *            存储地址
 	 * @param needCompress
-	 *            是否压缩LOGO
 	 * @throws Exception
 	 */
 	public static void encode(String content, String destPath,
@@ -182,12 +148,9 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 生成二维码
 	 * 
 	 * @param content
-	 *            内容
 	 * @param destPath
-	 *            存储地址
 	 * @throws Exception
 	 */
 	public static void encode(String content, String destPath) throws Exception {
@@ -195,16 +158,11 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 生成二维码(内嵌LOGO)
 	 * 
 	 * @param content
-	 *            内容
 	 * @param imgPath
-	 *            LOGO地址
 	 * @param output
-	 *            输出流
 	 * @param needCompress
-	 *            是否压缩LOGO
 	 * @throws Exception
 	 */
 	public static void encode(String content, String imgPath,
@@ -215,12 +173,9 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 生成二维码
 	 * 
 	 * @param content
-	 *            内容
 	 * @param output
-	 *            输出流
 	 * @throws Exception
 	 */
 	public static void encode(String content, OutputStream output)
@@ -229,10 +184,8 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 解析二维码
 	 * 
 	 * @param file
-	 *            二维码图片
 	 * @return
 	 * @throws Exception
 	 */
@@ -254,10 +207,8 @@ public class QRCodeUtil {
 	}
 
 	/**
-	 * 解析二维码
 	 * 
 	 * @param path
-	 *            二维码图片地址
 	 * @return
 	 * @throws Exception
 	 */

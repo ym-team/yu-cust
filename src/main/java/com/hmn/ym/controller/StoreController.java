@@ -1,5 +1,7 @@
 package com.hmn.ym.controller;
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -25,4 +27,16 @@ public class StoreController extends BaseController{
 	}
 	
 	
+	@RequestMapping(value = "StoreRegister.do")
+	public String storeRegister(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		System.out.println("入驻成功");
+		return "redirect:/index.do";
+	}
+	
+	
+	@RequestMapping(value = "storeLogin.do")
+	public String storeLogin(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		System.out.println("店家登录成功");
+		return "/store/userIndex";
+	}
 }
