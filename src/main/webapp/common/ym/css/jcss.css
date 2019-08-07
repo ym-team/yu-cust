@@ -8,7 +8,7 @@
 	line-height: 2rem;
 	text-align: center;
 	color: #fff;
-	background: #54acd9;
+	background: #54d9ca;
 	font-size: 0.85rem;
 	border-radius: 0.125rem;
 	-webkit-border-radius: 0.125rem;
@@ -27,12 +27,11 @@
 }
 .jjd-w .jjd-n {
 	height: 100%;
-	background: #54acd9;
+	background: #54d9ca;
 	border-radius:20px;
 }
 
 
-/*banner*/
 .flexslider{position:relative;}
 .slide {position:relative;}
 .flex-direction-nav{display: none;}
@@ -121,19 +120,18 @@
 	font-size:0.65rem;
 	color:#666;
 }
-/*首页-更多项目*/
 .jlc-morelist{
 	margin:0.5rem 0;
 	padding:0.3rem 0.5rem;
 	border-bottom:1px solid #ccc;
 	border-top:1px solid #ccc;
-	/* background:#fff; */
+	background:#fff;
 }
 .jlc-morelist:last-child{
 	/* margin-bottom:4rem; */
 }
 .jlc-morelist h3{
-	font-size:0.3rem;
+	font-size:0.6rem;
 	color:#000;
 	font-weight:bold;
 	overflow:hidden;
@@ -144,13 +142,13 @@
 	width:29%;
 	float:left;
 	text-align:center;
-	/* box-sizing:border-box; */
-	/* border-right:0px solid #ccc; */
+	box-sizing:border-box;
+	border-right:1px solid #ccc;
 }
 .jlc-mlcon ol li span{
 	font-size:0.9rem;
 	color:#ed412b;
-	/* font-weight:bold; */
+	font-weight:bold;
 	margin-top:0.5rem;
 	display:inline-block;
 }
@@ -176,9 +174,8 @@
 }
 .jlc-mlcon ul dt{
 	float:left;
-	font-size:0.85rem;
+	font-size:0.55rem;
 	color:#999;
-	padding: 0.85rem;
 }
 .jlc-mlcon ul dd{
 	float:left;
@@ -203,7 +200,7 @@
 	display:-webkit-box;
 	display:-moz-box;
 	font-size:0.6rem;
-	color:#54acd9;
+	color:#54d9ca;
 	width:100%;
 	margin:0.5rem auto;
 }
@@ -214,14 +211,14 @@
     height: 1.65rem;
     line-height: 1.65rem;
     text-align: center;
-    border: 1px solid #54acd9;
+    border: 1px solid #54d9ca;
 	margin-left:-1px;
     cursor: pointer;
 	box-sizing:border-box;
 }
 .jtagtit dd.cur{
 	color:#fff;
-    background: #54acd9;
+    background: #54d9ca;
 }
 .jtagtit dd:nth-of-type(1),.jtagtit dd:nth-of-type(1).cur{
 	border-radius:0.15rem 0 0 0.15rem;
@@ -229,7 +226,6 @@
 .jtagtit dd:nth-of-type(3),.jtagtit dd:nth-of-type(3).cur{
 	border-radius:0 0.15rem 0.15rem 0;
 }
-/*理财详情*/
 .jxq-box1{
 	margin:0.5rem;
 }
@@ -237,7 +233,7 @@
 	display:box;
 	display:-webkit-box;
 	display:-moz-box;
-	border:1px solid #54acd9;
+	border:1px solid #54d9ca;
 	height:2rem;
 	line-height:2rem;
 	border-radius:0.1rem;
@@ -256,7 +252,7 @@
 	-moz-box-flex:2;
 }
 .jxq-box1 dl dd span{
-	color:#54acd9;
+	color:#54d9ca;
 }
 .jxq-box1 dl .jnbtn a{
 	width:3.75rem;
@@ -356,7 +352,7 @@
 	height:2.2rem;
 	line-height:2.2rem;
 	border-radius:0.1rem;
-	border:1px solid #54acd9;
+	border:1px solid #54d9ca;
 }
 .jxq-box3 p{
 	font-size:0.5rem;
@@ -386,7 +382,7 @@
 	line-height:2.2rem;
 }
 .jxq-box5 h5.cur{
-	color:#54acd9;
+	color:#54d9ca;
 }
 .jxq-box5 h5 span{
 	display:block;
@@ -445,7 +441,7 @@
 .jxq-cpjs h3{
 	font-size:0.6rem;
 	color:#000;
-	border-left:4px solid #54acd9;
+	border-left:4px solid #54d9ca;
 	text-indent:0.15rem;
 	line-height:1;
 }
