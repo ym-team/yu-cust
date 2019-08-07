@@ -47,11 +47,13 @@
 								<img src="${configjscss }/images/yj.png">
 							</div> <span>我的业绩</span>
 					</a></li>
-						<li><a rel="external" href="${pathWeb }/user/inputCardView.do">
+					<li>
+						<a rel="external" href="${pathWeb }/user/inputCardView.do">
 							<div class="pic">
 								<img src="${configjscss }/images/gk.png">
 							</div> <span>我的顾客</span>
-					</a></li>
+						</a>
+					</li>
 					 
 					
 					<li><a rel="external"
