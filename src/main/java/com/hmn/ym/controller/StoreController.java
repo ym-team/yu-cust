@@ -39,4 +39,18 @@ public class StoreController extends BaseController{
 		System.out.println("店家登录成功");
 		return "/store/userIndex";
 	}
+	
+	
+	@RequestMapping(value = "performanceList.do")
+	public String performance(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		return "/store/performance";
+	}
+	
+	
+	@RequestMapping(value = "teamList.do")
+	public String teamList(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		return "/store/team";
+	}
+	
+	
 }

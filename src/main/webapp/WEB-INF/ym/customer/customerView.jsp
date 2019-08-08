@@ -179,11 +179,12 @@
 </body>
 <script type="text/javascript">
     function sub() {
+    	alert('test');
         var data = {};
         $.ajax({
             cache: false,
             type: "POST",
-            url: "",
+            url: "${pathWeb }/customer/list.do",
             data: data,
             async: false,
             error: function (request) {

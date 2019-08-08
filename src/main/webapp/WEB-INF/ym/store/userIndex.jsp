@@ -26,38 +26,32 @@
 						pattern="#,##0.00" /></span>
 				<p></p>
 			</div>
-			
-			<div class="sl_cz9">
-				<a rel="external" data-ajax="false" href="${pathWeb }/index.do" class="com_btn5 ">顾客邀请</a> <a
-					rel="external" data-ajax="false" href="${pathWeb }/backMoney/backMoneyListView" class="com_btn5 col">我的服务</a>
-			</div>
-			
+
 			<div class="list_con">
 				<ul>
 					 
 					<li><a rel="external"
-						href="${pathWeb }/company/companyInfoView.do">
+						href="${pathWeb }/customer/toAdd.do">
 							<div class="pic">
 								<img src="${configjscss }/images/wdtd.png">
-							</div> <span>我的团队</span>
+							</div> <span>邀请顾客</span>
 					</a></li>
 					<li><a rel="external"
-						href="${pathWeb }/borrow/queryPayBackList.do" class="zc_pic">
+						href="${pathWeb }/store/performanceList.do" class="zc_pic">
 							<div class="pic">
 								<img src="${configjscss }/images/yj.png">
 							</div> <span>我的业绩</span>
 					</a></li>
 					<li>
-						<a rel="external" href="${pathWeb }/user/inputCardView.do">
+						<a rel="external" href="${pathWeb }/customer/list.do">
 							<div class="pic">
 								<img src="${configjscss }/images/gk.png">
 							</div> <span>我的顾客</span>
 						</a>
 					</li>
-					 
-					
+				 					
 					<li><a rel="external"
-						href="${pathWeb }/login.do" class="zc_pic">
+						href="${pathWeb }/index.do" class="zc_pic">
 							<div class="pic">
 								<img src="${configjscss }/images/tc.png">
 							</div> <span>退出</span>

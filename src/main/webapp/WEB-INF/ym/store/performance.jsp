@@ -29,6 +29,7 @@
 				<ul class="sl_kyye">
 					<li>我的业绩<span><fmt:formatNumber value="100000" pattern="#,##0.00" />元</span>
 					</li>
+					<li>团队业绩 <span><fmt:formatNumber value="2000000" pattern="#,##0.00" />元</span>
 					</li>
 					<li>本月成交量<span>100单</span>
 					</li>
