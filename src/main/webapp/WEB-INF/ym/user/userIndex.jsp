@@ -41,13 +41,13 @@
 							</div> <span>身份信息</span>
 					</a></li>
 					<li><a rel="external"
-						href="${pathWeb }/company/companyInfoView.do">
+						href="${pathWeb }/performance/teamView.do">
 							<div class="pic">
 								<img src="${configjscss }/images/wdtd.png">
 							</div> <span>我的团队</span>
 					</a></li>
 					<li><a rel="external"
-						href="${pathWeb }/borrow/queryPayBackList.do" class="zc_pic">
+						href="${pathWeb }/performance/performanceView.do" class="zc_pic">
 							<div class="pic">
 								<img src="${configjscss }/images/yj.png">
 							</div> <span>我的业绩</span>

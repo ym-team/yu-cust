@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"> 
-<title>我的</title>
+<title>我的-客户</title>
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -16,6 +16,131 @@
 <%@include file="../taglibs.jsp"%>
 </head>
 <body>
+	<div class="ui-page ui-page-theme-a ui-page-active" data-role="page"
+		style="background: #eff2f7;">
+		
+		<div class="xq_con">
+			<header class="jwytz-header">
+		<h3>
+			<span onclick="history.go(-1)"></span>我的客户<em></em>
+		</h3>
+	</header>
+			<div class="jtag">
+				<div class="taglist" id="borrowContent1">
+					<div class="jlc-morelist">
+						<div class="jlc-mlcon clearfix">
+							<ol>
+								<li><span>1</span></li>
+								<li><p>张三</p></li>
+							</ol>
+							<ul>
+								<li><dl>
+										<dt>级别</dt>
+										<dd>
+											<div class="jjd-w">
+												<div class="jjd-n" style="width: 0%;"></div>
+											</div>
+										</dd>
+										<dd>美业老师</dd>
+									</dl></li>
+								<li><dl>
+										<dt>
+											<p>
+												加入时间 <b><span>2019-08-06</span></b>
+											</p>
+											<p>
+												个人业绩 <b>100单</b>
+											</p>
+										</dt>
+										<dd style="float: right; margin-top: 0.3rem;">
+											<div class="jnbtn">
+												<a data-ajax="false" href="">查看</a>
+											</div>
+										</dd>
+									</dl></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="jtag">
+				<div class="taglist" id="borrowContent1">
+					<div class="jlc-morelist">
+						<div class="jlc-mlcon clearfix">
+							<ol>
+								<li><span>2</span></li>
+								<li><p>李四</p></li>
+							</ol>
+							<ul>
+								<li><dl>
+										<dt>级别</dt>
+										<dd>
+											<div class="jjd-w">
+												<div class="jjd-n" style="width: 0%;"></div>
+											</div>
+										</dd>
+										<dd>美业老师</dd>
+									</dl></li>
+								<li><dl>
+										<dt>
+											<p>
+												加入时间 <b><span>2019-08-06</span></b>
+											</p>
+											<p>
+												个人业绩 <b>100单</b>
+											</p>
+										</dt>
+										<dd style="float: right; margin-top: 0.3rem;">
+											<div class="jnbtn">
+												<a data-ajax="false" href="">查看</a>
+											</div>
+										</dd>
+									</dl></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="jtag">
+				<div class="taglist" id="borrowContent1">
+					<div class="jlc-morelist">
+						<div class="jlc-mlcon clearfix">
+							<ol>
+								<li><span>3</span></li>
+								<li><p>王五</p></li>
+							</ol>
+							<ul>
+								<li><dl>
+										<dt>级别</dt>
+										<dd>
+											<div class="jjd-w">
+												<div class="jjd-n" style="width: 0%;"></div>
+											</div>
+										</dd>
+										<dd>美业老师</dd>
+									</dl></li>
+								<li><dl>
+										<dt>
+											<p>
+												加入时间 <b><span>2019-08-06</span></b>
+											</p>
+											<p>
+												个人业绩 <b>100单</b>
+											</p>
+										</dt>
+										<dd style="float: right; margin-top: 0.3rem;">
+											<div class="jnbtn">
+												<a data-ajax="false" href="">查看</a>
+											</div>
+										</dd>
+									</dl></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 </body>
 </html>

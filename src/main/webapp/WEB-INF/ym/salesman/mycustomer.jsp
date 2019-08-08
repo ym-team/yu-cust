@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>我的</title>
+<meta charset="utf-8"> 
+<title>我的-店面</title>
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -19,10 +19,10 @@
 	<div class="ui-page ui-page-theme-a ui-page-active" data-role="page"
 		style="background: #eff2f7;">
 		<header class="jwytz-header">
-			<h3>
-				<span onclick="history.go(-1)"></span>我的团队<em></em>
-			</h3>
-		</header>
+		<h3>
+			<span onclick="history.go(-1)"></span>入驻店面<em></em>
+		</h3>
+	</header>
 		<div class="xq_con">
 			<div class="jtag">
 				<div class="taglist" id="borrowContent1">
@@ -35,11 +35,7 @@
 							<ul>
 								<li><dl>
 										<dt>级别</dt>
-										<dd>
-											<div class="jjd-w">
-												<div class="jjd-n" style="width: 0%;"></div>
-											</div>
-										</dd>
+										 
 										<dd>美业老师</dd>
 									</dl></li>
 								<li><dl>
@@ -68,7 +64,9 @@
 					<div class="jlc-morelist">
 						<div class="jlc-mlcon clearfix">
 							<ol>
-								<li><span><img alt="" src="${configjscss }/images/toux.png"></span></li>
+								<li><span>
+								<img alt="" src="${configjscss }/images/toux.png">
+								</span></li>
 								<li><p>李四</p></li>
 							</ol>
 							<ul>

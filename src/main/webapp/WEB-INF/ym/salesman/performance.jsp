@@ -17,6 +17,11 @@
 </head>
 <body>
 	<div class="ui-page ui-page-theme-a ui-page-active" data-role="page">
+	<header class="jwytz-header">
+			<h3>
+				<span onclick="history.go(-1)"></span>我的业绩<em></em>
+			</h3>
+		</header>
 		<div class="wd_con sl_wd_con1">
 			<div class="sl_zhzl">
 				<img class="sl_zhzl5" src="${configjscss }/images/wdzh_07.png" alt=""> <img
