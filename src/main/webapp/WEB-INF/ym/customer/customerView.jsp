@@ -11,8 +11,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <%@include file="../taglibs.jsp" %>
 </head>
 
@@ -173,8 +172,7 @@
         </div>
     </div>
     <div class="btn4">
-        <a style="margin-bottom: 5rem;" href="javascript:void(0)"
-           onclick="sub();" class="com_btn1 sl_tixian">确认</a>
+        <a style="margin-bottom: 5rem;" href="javascript:void(0)" onclick="sub();" class="com_btn1 sl_tixian">确认</a>
     </div>
     <jsp:include page="/h5/foot.do?footId=4"></jsp:include>
 </div>
