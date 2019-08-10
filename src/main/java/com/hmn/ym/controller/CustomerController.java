@@ -23,4 +23,10 @@ public class CustomerController extends BaseController {
 	public String storeRegister(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		return "/customer/mycustList";
 	}
+	
+	
+	@RequestMapping(value = "detail.do")
+	public String detail(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		return "/store/customDetail";
+	}
 }

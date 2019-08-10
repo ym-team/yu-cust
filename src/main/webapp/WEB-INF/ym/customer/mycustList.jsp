@@ -54,7 +54,7 @@
 										</dt>
 										<dd style="float: right; margin-top: 0.3rem;">
 											<div class="jnbtn">
-												<a data-ajax="false" href="">查看</a>
+												<a data-ajax="false" href="${pathWeb }/customer/detail.do">查看</a>
 											</div>
 										</dd>
 									</dl></li>
@@ -93,7 +93,7 @@
 										</dt>
 										<dd style="float: right; margin-top: 0.3rem;">
 											<div class="jnbtn">
-												<a data-ajax="false" href="">查看</a>
+												<a data-ajax="false" href="${pathWeb }/customer/detail.do">查看</a>
 											</div>
 										</dd>
 									</dl></li>
@@ -132,7 +132,7 @@
 										</dt>
 										<dd style="float: right; margin-top: 0.3rem;">
 											<div class="jnbtn">
-												<a data-ajax="false" href="">查看</a>
+												<a data-ajax="false" href="${pathWeb }/customer/detail.do">查看</a>
 											</div>
 										</dd>
 									</dl></li>
