@@ -120,7 +120,7 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 	background-size: 0.85rem 0.85rem;
 }
 .footer li.current a span{
-	color: #438feb;
+	color: #54d9ca;
 }
 .footer li.current a i{
 	background: url(../images/icon_footer4.png) no-repeat center center;
