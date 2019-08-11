@@ -98,8 +98,8 @@
                 </div>
             </li>
 
-            <li class="sl_ji">
-                <p>收款在哪里收的？</p>
+            <li class="sl_ji" style="line-height:inherit">
+                <p>收款在哪里收？</p>
                 <div class="position-rel">
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入收款在哪里收的？">
                 </div>
@@ -152,7 +152,7 @@
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入铺垫次数">
                 </div>
             </li>
-            <li class="sl_ji">
+            <li class="sl_ji" style="line-height:inherit">
                 <p>最大的抗拒点是什么</p>
                 <div class="position-rel">
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入最大的抗拒点是什么">
