@@ -48,7 +48,7 @@
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入顾客职业">
                 </div>
             </li>
-            <li class="sl_ji">
+            <li class="sl_ji" style="line-height:inherit">
                 <p>预约到院咨询时间</p>
                 <div class="position-rel">
                     <input type="number" class="form-control" style="width: 9rem;" placeholder="请输入预约到院咨询时间">
@@ -72,13 +72,13 @@
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入是否分期">
                 </div>
             </li>
-            <li class="sl_ji">
+            <li class="sl_ji" style="line-height:inherit">
                 <p>做过哪些整形项目</p>
                 <div class="position-rel">
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入做过哪些整形项目">
                 </div>
             </li>
-            <li class="sl_ji">
+            <li class="sl_ji" style="line-height:inherit">
                 <p>做过的项目价格</p>
                 <div class="position-rel">
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入做过的项目价格">
