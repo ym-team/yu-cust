@@ -102,21 +102,21 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 .footer li a i{
 	width: 0.85rem;
 	height: 0.85rem;
-	background: url(../images/icon_footer1.png) no-repeat center center;
+	background: url(../images/icon_footer4.png) no-repeat center center;
 	background-size: 0.85rem 0.85rem;
 	display: block;
 	margin:0.5rem auto 0;
 }
 .footer li a i.one1{
-	background: url(../images/icon_footer2.png) no-repeat center center;
-	background-size: 0.85rem 0.85rem;
-}
-.footer li a i.one2{
 	background: url(../images/icon_footer3.png) no-repeat center center;
 	background-size: 0.85rem 0.85rem;
 }
-.footer li a i.one3{
+.footer li a i.one2{
 	background: url(../images/icon_footer8.png) no-repeat center center;
+	background-size: 0.85rem 0.85rem;
+}
+.footer li a i.one3{
+	background: url(../images/icon_footer2.png) no-repeat center center;
 	background-size: 0.85rem 0.85rem;
 }
 .footer li.current a span{
@@ -131,7 +131,7 @@ ul:after{ content:''; display:block;height:0;clear:both;overflow:hidden;}
 	background-size: 0.85rem 0.85rem;
 }
 .footer li.current a i.one2{
-	background: url(../images/icon_footer6.png) no-repeat center center;
+	background: url(../images/icon_footer8.png) no-repeat center center;
 	background-size: 0.85rem 0.85rem;
 }
 .footer li.current a i.one3{
