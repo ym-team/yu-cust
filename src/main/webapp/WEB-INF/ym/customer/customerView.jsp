@@ -165,11 +165,6 @@
                 </div>
             </li>
         </ul>
-        <div class="forget">
-            <p>
-                我已阅读并同意<a rel="external" href="${pathWeb }/getProtocol.do">《入驻协议及隐私条款》</a>
-            </p>
-        </div>
     </div>
     <div class="btn4">
         <a style="margin-bottom: 5rem;" href="javascript:void(0)" onclick="sub();" class="com_btn1 sl_tixian">确认</a>
