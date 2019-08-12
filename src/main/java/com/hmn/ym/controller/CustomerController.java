@@ -33,4 +33,9 @@ public class CustomerController extends BaseController {
     public String appointment(HttpServletRequest request, HttpServletResponse response) throws IOException {
         return "/customer/appointment";
     }
+
+    @RequestMapping(value = "appointmentList.do")
+    public String appointmentList() {
+        return "/customer/appointmentList";
+    }
 }
