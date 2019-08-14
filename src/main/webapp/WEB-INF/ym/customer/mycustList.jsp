@@ -43,7 +43,9 @@
 										</dd>
 										<dd>美业老师</dd>
 									</dl></li>
-								<li><dl>
+								<li>
+								
+									<dl>
 										<dt>
 											<p>
 												加入时间 <b><span>2019-08-06</span></b>
@@ -51,13 +53,19 @@
 											<p>
 												个人业绩 <b>100单</b>
 											</p>
+											
+											<p>
+												已反馈
+											</p>
 										</dt>
 										<dd style="float: right; margin-top: 0.3rem;">
 											<div class="jnbtn">
 												<a data-ajax="false" href="${pathWeb }/customer/detail.do">查看</a>
 											</div>
 										</dd>
-									</dl></li>
+									</dl>
+									
+									</li>
 							</ul>
 						</div>
 					</div>
@@ -90,6 +98,10 @@
 											<p>
 												个人业绩 <b>100单</b>
 											</p>
+											<p>
+												已完成
+											</p>
+											
 										</dt>
 										<dd style="float: right; margin-top: 0.3rem;">
 											<div class="jnbtn">
@@ -128,6 +140,9 @@
 											</p>
 											<p>
 												个人业绩 <b>100单</b>
+											</p>
+												<p>
+												进行中
 											</p>
 										</dt>
 										<dd style="float: right; margin-top: 0.3rem;">
