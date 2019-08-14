@@ -264,6 +264,12 @@ img {
 </head>
 <body>
 	<div class="ui-page ui-page-theme-a ui-page-active" data-role="page" >
+	
+	<header class="jwytz-header">
+		<h3>
+			<span onclick="history.go(-1)"></span>我的身份<em></em>
+		</h3>
+	</header>
         <c:if test="${user.realnameStatus=='2'||user.realnameStatus=='-1'}">
         	<c:set value="disabled" var="disabled"/>
         </c:if>
@@ -367,9 +373,7 @@ img {
 					</div>
 					</c:if>
 					
-					<%-- <div class="hcamera pab" id="uploadsc">
-						<img src="${configjscss }/images/imgs/hcamera.png" alt="">
-					</div> --%>
+					 
 					<div class="sfztip pab">手持身份证照扫描上传</div>
 				</div>
 			</div>

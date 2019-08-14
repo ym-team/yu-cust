@@ -53,13 +53,13 @@
 							</div> <span>我的业绩</span>
 					</a></li>
 					<li><a rel="external"
-						href="${pathWeb }/user/inputCardView.do">
+						href="${pathWeb }/performance/myCustomerView.do">
 							<div class="pic">
 								<img src="${configjscss }/images/gk.png">
 							</div> <span>我的顾客</span>
 					</a></li>
 					<li><a rel="external"
-						href="${pathWeb }/user/bandMobileView.do">
+						href="${pathWeb }/performance/myCustView.do">
 							<div class="pic">
 								<img src="${configjscss }/images/dm.png">
 							</div> <span>我的客户</span>
@@ -72,7 +72,7 @@
 					</a></li>
 					
 					<li><a rel="external"
-						href="${pathWeb }/login.do" class="zc_pic">
+						href="${pathWeb }/layout.do" class="zc_pic">
 							<div class="pic">
 								<img src="${configjscss }/images/tc.png">
 							</div> <span>退出</span>
