@@ -105,5 +105,13 @@ public class LoginController extends BaseController{
 	}
 	
 	
+	/**
+	 * 退出登录
+	 */
+	@RequestMapping("layout.do")
+	public String layout(HttpServletRequest request, HttpServletResponse response, Model model) {
+			return "redirect:/index.do";
+		}
+	
 
 }
