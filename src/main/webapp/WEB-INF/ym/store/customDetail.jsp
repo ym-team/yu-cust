@@ -98,8 +98,8 @@
                 </div>
             </li>
 
-            <li class="sl_ji">
-                <p>收款在哪里收的？</p>
+            <li class="sl_ji" style="line-height:inherit">
+                <p>收款在哪里收？</p>
                 <div class="position-rel">
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入收款在哪里收的？">
                 </div>
@@ -152,7 +152,7 @@
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入铺垫次数">
                 </div>
             </li>
-            <li class="sl_ji">
+            <li class="sl_ji" style="line-height:inherit">
                 <p>最大的抗拒点是什么</p>
                 <div class="position-rel">
                     <input type="text" style="width: 9rem;" class="form-control" placeholder="请输入最大的抗拒点是什么">
@@ -165,11 +165,6 @@
                 </div>
             </li>
         </ul>
-        <div class="forget">
-            <p>
-                我已阅读并同意<a rel="external" href="${pathWeb }/getProtocol.do">《入驻协议及隐私条款》</a>
-            </p>
-        </div>
     </div>
     <div class="btn4">
         <a style="margin-bottom: 5rem;" href="javascript:void(0)" onclick="sub();" class="com_btn1 sl_tixian">确认</a>
