@@ -1,5 +1,6 @@
 package com.hmn.ym.controller;
 
+import com.google.common.collect.Maps;
 import com.hmn.ym.servlet.JcaptchaServlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +10,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -24,15 +24,14 @@ public class BaseController {
             request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         }
         Map<?, ?> req = request.getParameterMap();
-        Map<String, String> p = new HashMap<String, String>();
+        Map<String, String> p = Maps.newHashMap();
         if ((req != null) && (!req.isEmpty())) {
             Collection keys = req.keySet();
             for (Iterator i = keys.iterator(); i.hasNext(); ) {
                 String key = (String) i.next();
                 Object value = req.get(key);
                 Object v = null;
-                if ((value.getClass().isArray())
-                        && (((Object[]) value).length > 0)) {
+                if ((value.getClass().isArray()) && (((Object[]) value).length > 0)) {
                     v = ((Object[]) value)[0];
                 } else {
                     v = value;
@@ -46,7 +45,7 @@ public class BaseController {
             }
             //读取cookie
             logger.info("params:===" + p);
-            p.putAll(ReadCookieMap(request));
+            p.putAll(this.readCookieMap(request));
             return p;
         }
         return p;
@@ -58,8 +57,8 @@ public class BaseController {
      * @param request
      * @return
      */
-    public static Map<String, String> ReadCookieMap(HttpServletRequest request) {
-        Map<String, String> cookieMap = new HashMap<String, String>();
+    public static Map<String, String> readCookieMap(HttpServletRequest request) {
+        Map<String, String> cookieMap = Maps.newHashMap();
         Cookie[] cookies = request.getCookies();
         if (null != cookies) {
             for (Cookie cookie : cookies) {

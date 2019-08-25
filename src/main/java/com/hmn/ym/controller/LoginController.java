@@ -39,7 +39,6 @@ public class LoginController extends BaseController{
 	
 	@RequestMapping("login.do")
 	public void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
 		Map<String, String> param = this.getParameters(request);
 		String code = "";
 		String msg = "";
