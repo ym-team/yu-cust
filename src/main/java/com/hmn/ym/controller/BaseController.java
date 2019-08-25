@@ -57,7 +57,7 @@ public class BaseController {
      * @param request
      * @return
      */
-    public static Map<String, String> readCookieMap(HttpServletRequest request) {
+    public Map<String, String> readCookieMap(HttpServletRequest request) {
         Map<String, String> cookieMap = Maps.newHashMap();
         Cookie[] cookies = request.getCookies();
         if (null != cookies) {
@@ -69,13 +69,11 @@ public class BaseController {
     }
 
     public boolean validateCaptcha(HttpServletRequest request, String code) {
-        boolean bln = false;
-        code = code.toUpperCase();
         String cd = request.getSession().getAttribute(JcaptchaServlet.CAPTCHA_SESSION) + "";
-        if (cd.equals(code)) {
-            bln = true;
+        if (cd.equals(code.toUpperCase())) {
+            return true;
         }
-        return bln;
+        return false;
     }
 
     /**
